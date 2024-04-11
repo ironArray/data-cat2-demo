@@ -17,4 +17,11 @@ test -d venv || python3 -m venv venv
 (. venv/bin/activate && pip install -e ./caterva2[services,hdf5,blosc2-plugins])
 ```
 
+### Caterva2 directory root (root-example)
+
+```sh
+venv/bin/python -m caterva2.services.dirroot root-example \
+&& (. venv/bin/activate && python lung_b2nd.py 10 root-example/lung-jpeg2000_10x.b2nd)
+```
+
 TODO
