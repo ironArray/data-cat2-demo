@@ -1,0 +1,3 @@
+[submodule "caterva2"]
+	path = caterva2
+	url = https://github.com/Blosc/Caterva2.git
