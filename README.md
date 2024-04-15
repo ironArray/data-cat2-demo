@@ -24,4 +24,10 @@ venv/bin/python -m caterva2.services.dirroot root-example \
 && (. venv/bin/activate && python lung_b2nd.py 10 root-example/lung-jpeg2000_10x.b2nd)
 ```
 
+### HDF5 root (hdf5root-example)
+
+```sh
+venv/bin/python -m caterva2.services.hdf5root hdf5root-example.h5
+```
+
 TODO
