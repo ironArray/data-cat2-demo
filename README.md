@@ -4,6 +4,8 @@ This repository contains the data files (roots and datasets) used to deploy a Ca
 
 ## How data was generated
 
+**Note:** These instructions are not needed to use the data, only to re-generate it.
+
 First, make sure that the `caterva2` submodule is cloned and up-to-date:
 
 ```sh
@@ -43,5 +45,3 @@ venv/bin/python -m caterva2.services.hdf5root hdf5root-example.h5
 ```sh
 (. venv/bin/activate && python lung_hdf5.py lung-jpeg2000.h5)
 ```
-
-TODO
