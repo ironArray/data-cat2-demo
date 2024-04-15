@@ -38,4 +38,10 @@ venv/bin/python -m caterva2.services.hdf5root hdf5root-example.h5
  && mv caterva2/test-images/numbers-jpeg2000.h5 numbers-jpeg2000.h5
 ```
 
+### JPEG 2000 lung tomography HDF5 root (lung-jpeg2000)
+
+```sh
+(. venv/bin/activate && python lung_hdf5.py lung-jpeg2000.h5)
+```
+
 TODO
