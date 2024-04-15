@@ -24,7 +24,7 @@ test -d venv || python3 -m venv venv
 
 ```sh
 venv/bin/python -m caterva2.services.dirroot root-example \
-&& (. venv/bin/activate && python lung_b2nd.py 10 root-example/lung-jpeg2000_10x.b2nd)
+&& (. venv/bin/activate && python scripts/lung_b2nd.py 10 root-example/lung-jpeg2000_10x.b2nd)
 ```
 
 ### HDF5 root (`hdf5root-example.h5`)
@@ -43,5 +43,5 @@ venv/bin/python -m caterva2.services.hdf5root hdf5root-example.h5
 ### JPEG 2000 lung tomography HDF5 root (`lung-jpeg2000.h5`)
 
 ```sh
-(. venv/bin/activate && python lung_hdf5.py lung-jpeg2000.h5)
+(. venv/bin/activate && python scripts/lung_hdf5.py lung-jpeg2000.h5)
 ```
