@@ -14,7 +14,8 @@ Then, install Caterva2 in a Python virtual environment:
 
 ```sh
 test -d venv || python3 -m venv venv
-(. venv/bin/activate && pip install -e ./caterva2[services,hdf5,blosc2-plugins])
+(. venv/bin/activate && pip install -e ./caterva2[services,hdf5,blosc2-plugins] \
+ && pip install pillow)
 ```
 
 ### Caterva2 directory root (root-example)
@@ -28,6 +29,13 @@ venv/bin/python -m caterva2.services.dirroot root-example \
 
 ```sh
 venv/bin/python -m caterva2.services.hdf5root hdf5root-example.h5
+```
+
+### JPEG 2000 numbers HDF5 root (numbers-jpeg2000)
+
+```sh
+(. venv/bin/activate && cd caterva2/test-images && python encode-grok-numbers.py) \
+ && mv caterva2/test-images/numbers-jpeg2000.h5 numbers-jpeg2000.h5
 ```
 
 TODO
