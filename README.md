@@ -20,6 +20,8 @@ test -d venv || python3 -m venv venv
  && pip install pillow)
 ```
 
+**Note:** If you want to update the version of Caterva2, update the `caterva2` submodule, update the virtual environment (see above), re-generate data files and commit the changes.
+
 ### Caterva2 directory root (`root-example`)
 
 ```sh
