@@ -5,7 +5,7 @@ import numpy
 
 cratio, out = sys.argv[1:]; cratio = int(cratio)
 
-bi = b2.open('data/lung_raw_slice.b2nd')
+bi = b2.open('source-data/lung_raw_slice.b2nd')
 cs = (1, *bi.shape[1:])
 
 b2g.set_params_defaults(
