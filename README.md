@@ -23,25 +23,29 @@ test -d venv || python3 -m venv venv
 ### Caterva2 directory root (`root-example`)
 
 ```sh
-venv/bin/python -m caterva2.services.dirroot root-example \
-&& (. venv/bin/activate && python scripts/lung_b2nd.py 10 root-example/lung-jpeg2000_10x.b2nd)
+venv/bin/python -m caterva2.services.dirroot root-example.new \
+&& (. venv/bin/activate && python scripts/lung_b2nd.py 10 root-example.new/lung-jpeg2000_10x.b2nd) \
+&& mv root-example root-example.old && mv root-example.new root-example
 ```
 
 ### HDF5 root (`hdf5root-example.h5`)
 
 ```sh
-venv/bin/python -m caterva2.services.hdf5root hdf5root-example.h5
+venv/bin/python -m caterva2.services.hdf5root hdf5root-example.new.h5 \
+&& mv hdf5root-example.new.h5 hdf5root-example.h5
 ```
 
 ### JPEG 2000 numbers HDF5 root (`numbers-jpeg2000.h5`)
 
 ```sh
 (. venv/bin/activate && cd caterva2/test-images && python encode-grok-numbers.py) \
- && mv caterva2/test-images/numbers-jpeg2000.h5 numbers-jpeg2000.h5
+&& mv caterva2/test-images/numbers-jpeg2000.h5 numbers-jpeg2000.new.h5 \
+&& mv numbers-jpeg2000.new.h5 numbers-jpeg2000.h5
 ```
 
 ### JPEG 2000 lung tomography HDF5 root (`lung-jpeg2000.h5`)
 
 ```sh
-(. venv/bin/activate && python scripts/lung_hdf5.py lung-jpeg2000.h5)
+(. venv/bin/activate && python scripts/lung_hdf5.py lung-jpeg2000.new.h5) \
+&& mv lung-jpeg2000.new.h5 lung-jpeg2000.h5
 ```
