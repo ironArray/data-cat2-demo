@@ -51,3 +51,7 @@ venv/bin/python -m caterva2.services.hdf5root hdf5root-example.new.h5 \
 (. venv/bin/activate && python scripts/lung_hdf5.py lung-jpeg2000.new.h5) \
 && mv lung-jpeg2000.new.h5 lung-jpeg2000.h5
 ```
+
+### Caterva2 directory root (`root-blosc2-tests`)
+
+This root contains files used for testing blosc2, like the C2Array class.
