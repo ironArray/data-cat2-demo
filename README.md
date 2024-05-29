@@ -30,6 +30,13 @@ venv/bin/python -m caterva2.services.dirroot root-example.new \
 && mv root-example root-example.old && mv root-example.new root-example
 ```
 
+Make sure to commit the changes to the `root-example` directory, while adding possible new files:
+
+```sh
+git add root-example
+git commit -m "Update root-example"
+```
+
 ### HDF5 root (`hdf5root-example.h5`)
 
 ```sh
